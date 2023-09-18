@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+/*--------------- NAVBAR SECTION --------*/
+
+.nav-wrapper {
+    /* background-color:#9EBC9F; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85em 10%;
+}
+
+.nav-logo {
+    height: 3em;
+    /* object-fit: cover; */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 1.5em;
+    /* margin-right: 1em; */
+}
+
+.nav-item {
+    text-decoration: none;
+    /* color: #F4F2F3; */
+    color: #3B322C;
+    transition: 0.5s;
+}
+
+.nav-item.order {
+    color: #F4F2F3;
+    background-color: #467054;
+    border-radius: 50px;
+    padding: 0.5em;
+}
+
+.nav-item:hover {
+    /* color:#7a6138; */
+    color: #568d6b;
+}
+
+.nav-item.order:hover {
+    color: #F4F2F3;
+    background-color: #57996d;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #3B322C;
+    /* background-color: */
+    padding: 5px 20px;
+    border-radius: 0.75em;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    color: #568d6b;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.3em 0;
+    }
+
+    .nav-item.order {
+        margin: 3em 0;
+    }
+
+    .login-btn {
+        margin-top: 0.5em;
+    }
+}
+
+/*--------------- MAIN SECTION --------*/
+
+.banner {
+    color: #F4F2F3;
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 4em;
+    /* background-color: #4C2E05; */
+    background-color: #2e4636;
+}
+
+.banner-info {
+    width: 50%;
+    padding: 1em;
+}
+
+.banner-info h2 {
+    margin-bottom: 0.20em;
+}
+
+.banner-info h4 {
+    font-weight: 500;
+}
+
+.banner-info p {
+    margin-top: 2em;
+}
+
+.banner-btn {
+    background-color: #e2bb5e;
+    font-family: "Montserrat";
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    padding: 0.65em;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner-btn:hover {
+    background-color: #e2e752;
+}
+
+.banner-img {
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    /* object-fit: cover; */
+}
+
+@media (max-width:768px) {
+    .banner-info {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+}
+
+.highlights {
+    padding: 4% 15%;
+}
+
+.high-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+}
+
+.high-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 0.65em 1em;
+    background-color: #e2bb5e;
+    font-family: "Montserrat";
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.high-btn:hover {
+    background-color: #e2e752;
+}
+
+.high-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.high-card-item {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    width: 28%;
+}
+
+.card-img {
+    margin-bottom: 1em;
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-content{
+    padding: 1em 1em;
+}
+
+.card-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.25em;
+}
+
+.card-dish-name {
+    /* display: inline-block; */
+    /* width: 100%; */
+    padding-right: 5em;
+}
+
+.card-price {
+    color: #dd9001;
+    /* width: 100%; */
+}
+
+.card-dish-descrip {
+    font-size:0.85em;
+    line-height: 1.3em;
+    margin-bottom: 3em;
+}
+
+.card-order-btn {
+    color: #c29837;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card-order-btn:hover {
+    color: #fda502;
+}
+
+@media (max-width:768px) {
+    .high-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .high-card-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+.testimonials {
+    background-color: #d6d0d0;
+    padding: 4% 10%;
+}
+
+.testimonials > h3 {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.cust-reviews {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-card {
+    background-color: #f1f0ed;
+    width: 25%;
+    padding: 1.5em 1.5em;
+    margin-right: 3em;
+    border-radius: 10px;
+}
+
+.review-rating {
+    font-size: 0.8em;
+}
+
+.review-user {
+    display: flex;
+    margin: 1em 0;
+}
+
+
+
+.review-img {
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.review-name {
+    font-weight: 600;
+}
+
+.review-username {
+    font-weight: 300;
+}
+
+.review-descrip {
+    font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 1% auto;
+    }
+
+    .testimonials > h3 {
+        margin-bottom: 1.5em;
+    }
+
+    .cust-reviews {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}
+
+.about {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 3% 10%;
+}
+
+.about-content {
+    width: 50%;
+    margin-right: 3em;
+}
+
+.about-content > h2 {
+    margin-bottom: 0.25em;
+}
+
+.about-content > p {
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.about-imgs {
+    width: 50%;
+}
+
+.about-pic1 {
+    width: 50%;
+    aspect-ratio: 0.5/0.5;
+    transform: translateY(60px);
+}
+
+.about-pic2 {
+    width: 50%;
+    aspect-ratio: 0.5/0.5;
+    transform: translateX(-60px);
+}
+
+@media(max-width:768px) {
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0; */
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-content > p {
+        margin-bottom: 1.25em;
+    }
+
+    .about-imgs {
+        width: 100%;
+    }
+
+    .about-pic1 {
+        width: 100%;
+        aspect-ratio: 0.5/0.5;
+        transform: none;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .about-pic2 {
+        width: 100%;
+        transform: none;
+        margin: 1em auto;
+        border-radius: 10px;
+    }
+}
+
+/*-- Reservations--- */
+form {
+    margin: auto;
+}
+
+
+
+/*--------------- FOOTER SECTION --------*/
+
+.footerContainer {
+    min-height: 31vh;
+}
+
+footer {
+    width: 100%;
+    background-color: #91785D;
+    font-size: 0.8rem;
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 0 auto;
+    /* align-items: center; */
+    padding: 0.75em 10%;
+    position: sticky;
+    top: 100%;
+}
+
+footer div {
+    width: 88%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer section {
+    margin-right: 3em;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 15%; */
+}
+
+.footer-logo {
+    height: 20%;
+    width: 12%;
+    /* object-fit: cover; */
+}
+
+.footer-section h3 {
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.footer-section li {
+    color: white;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: rgb(207, 204, 204);
+    transition: 0.3s ease-out;
+}
+
+@media(max-width:768px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 50%;
+        margin: 1em 0;
+    }
+
+    footer > div {
+        display: flex;
+        width: 100%;
+        justify-content:space-evenly;
+        margin-top: 1em;
+        padding: 0 1em;
+    }
+
+    footer section {
+        margin: auto;
+    }
+
+    .footer-section.doormat {
+        display: none;
+    }
+
+    .footer-section.contact {
+        /* width: 50%; */
+        margin: auto;
+    }
+
+    .footer-section.social {
+        /* width: 50%; */
+        margin: auto;
+    }
+}
